@@ -8,12 +8,12 @@
 
 - 세미나에서 제안된 논문은 다음과 같습니다.
 
-1. Kingma and Welling (2013) - Variational Autoencoder
-2. Goodfellow et al. (2014) - Generative Adversarial Nets
-3. Arjovsky et al. (2017) - Wasserstein GAN
-4. Chen et al. (2018) - Neural ordinary differential equations
-5. Song et al. (2021) - Score-based generative modeling through stochastic differential equations
-6. Vaswani et al. (2017) - Attention is all you need
+1. [Kingma and Welling (2013) - Variational Autoencoder](https://arxiv.org/abs/1312.6114)
+2. [Goodfellow et al. (2014) - Generative Adversarial Nets]
+3. [Arjovsky et al. (2017) - Wasserstein GAN]
+4. [Chen et al. (2018) - Neural ordinary differential equations]
+5. [Song et al. (2021) - Score-based generative modeling through stochastic differential equations]
+6. [Vaswani et al. (2017) - Attention is all you need]
 7. Gal and Ghahramani (2016) - Dropout as a bayesian approximation_representing model uncertainty in deep learning
 8. Gal and Ghahramani (2016) - Bayesian convolutional neural networks with bernoulli approximate variaional inference
 9. Wu et al. (2020) - A comprehensive survey on graph neural networks
