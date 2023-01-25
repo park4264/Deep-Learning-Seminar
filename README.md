@@ -1,4 +1,4 @@
-# Deep Learning Seminar Review and Implementation
+# Deep Learning Study
 
 - 서울대학교 공간통계연구실 딥러닝 세미나 (2022.07~2022.09) 에서 다룬 논문들을 리뷰하고 구현해봅니다.
 - 수학, 통계학을 공부 후 처음 딥러닝을 공부하고 관심 갖게되는 계기가 되었습니다.
