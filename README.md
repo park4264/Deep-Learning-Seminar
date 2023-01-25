@@ -18,4 +18,9 @@
 8. Gal and Ghahramani (2016) - Bayesian convolutional neural networks with bernoulli approximate variaional inference
 9. Wu et al. (2020) - A comprehensive survey on graph neural networks
 10. Kipf and Welling (2017) - Semi-supervised classification with graph convolutional networks
-11. 
+11. Bellemare et al. (2017) - A distributional perspective on reinforcement learning
+12. Levine (2018) - Reinforcement learning and control as probabilistic inference_tutorial and review
+13. Finn et al. (2017) - Model-agnostic meta learning for fast adaptation of deep networks
+14. Finn et al. (2018) - Probabilistic model-agnostic meta-learning
+15. He et al. (2020) - Momentum contrast for unsupervised visual representation learning
+16. Chen et al. (2020) - A simple framework for contrastive learning of visual representations
