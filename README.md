@@ -26,5 +26,5 @@
 16. [Chen et al. (2020) - A simple framework for contrastive learning of visual representations](https://arxiv.org/abs/2002.05709)
 
 - 수학적, 통계적 독해능력이 논문을 이해하고 공부하며 인사이트를 얻는데 도움이 되었습니다.
-
+- 수학적 리뷰 및 논문 구현과 응용.
 
