@@ -21,10 +21,10 @@
 7. [Kipf and Welling (2017) - Semi-supervised classification with graph convolutional networks](https://arxiv.org/abs/1609.02907)
 8. [Bellemare et al. (2017) - A distributional perspective on reinforcement learning](https://arxiv.org/abs/1707.06887)
 9. [Levine (2018) - Reinforcement learning and control as probabilistic inference_tutorial and review](https://arxiv.org/abs/1805.00909)
-\\<!-- 13. [Finn et al. (2017) - Model-agnostic meta learning for fast adaptation of deep networks](https://arxiv.org/abs/1703.03400) (x) -->
-\\<!-- 14. [Finn et al. (2018) - Probabilistic model-agnostic meta-learning](https://arxiv.org/abs/1806.02817) (x) -->
-\\<!-- 15. [He et al. (2020) - Momentum contrast for unsupervised visual representation learning](https://arxiv.org/abs/1911.05722) (x) -->
-\\<!-- 16. [Chen et al. (2020) - A simple framework for contrastive learning of visual representations](https://arxiv.org/abs/2002.05709) (x) -->
+<!-- 13. [Finn et al. (2017) - Model-agnostic meta learning for fast adaptation of deep networks](https://arxiv.org/abs/1703.03400) (x) -->
+<!-- 14. [Finn et al. (2018) - Probabilistic model-agnostic meta-learning](https://arxiv.org/abs/1806.02817) (x) -->
+<!-- 15. [He et al. (2020) - Momentum contrast for unsupervised visual representation learning](https://arxiv.org/abs/1911.05722) (x) -->
+<!-- 16. [Chen et al. (2020) - A simple framework for contrastive learning of visual representations](https://arxiv.org/abs/2002.05709) (x) -->
 
 - 수학적, 통계적 독해능력이 논문을 이해하고 공부하며 인사이트를 얻는데 도움이 되었습니다.
 - 수학적 리뷰 및 논문 구현과 응용 (토이프로젝트).
