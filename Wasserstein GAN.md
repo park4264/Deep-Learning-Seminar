@@ -254,9 +254,35 @@ $$w \leftarrow \text{clip}(w,-c,c)$$
 
 ## GAN과 WGAN
 
-![img](./img/image2.png)
+![img](./img/ganwgan.png)
 
-## 
-         
+## Empirical Results
+
+We claim two main benefits:
+- A meaningful loss metric that correlates with the generator’s convergence and sample quality
+- Improved stability of the optimization process
+
+### Experimental Procedure
+
+![img](./img/ex4.1.png)
+
+- The loss decreases quickly and sample quality increases as well.
+
+### Meaningful loss metric
+
+![img](./img/ex4.2.png)
+
+- JS estimates for same setting.
+- We have succesfully used the loss metric to validate our experiments repeatedly
+
+
+### Improved stability
+
+![img](./img/ex4.3.png)
+
+- Even though we remove the batch normalization in DCGAN, WGAN can still perform.
+- It has no sign of mode collapse in experiments, and the generator can still learn when the critic perform well.
+
+
 
 
