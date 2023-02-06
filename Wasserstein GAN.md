@@ -109,5 +109,25 @@ $$KL(\mathbb P_r || \mathbb P_g) = \int \log \left( \dfrac{P_r(x)}{P_g(x)} \righ
 $JS(\mathbb P_r, \mathbb P_g) = KL(\mathbb P_r || \mathbb P_m) + KL(\mathbb P_g || \mathbb P_m),$$ where $\mathbb P_m$ is the mixture $(\mathbb P_r + \mathbb P_g)/2$
 
 - **The Earth-Mover (EM) distance or Wasserstein-1:**
-$$W(\mathbb P_r , \mathbb P_g) = \inf_{\gamma \in \prod (\mathbb P_r, \p_g)} \E_{(x,y) \sim \gamma}\Big[ || x - y || \Big],$$
+$$W(\mathbb P_r , \mathbb P_g) = \inf_{\gamma \in \prod (\mathbb P_r, \mathbb P_g)} \mathbb E_{(x,y) \sim \gamma}\Big[ || x - y || \Big],$$
+where $\prod (\mathbb P_r, \mathbb P_g)$ denotes the set of all joint distributions $\gamma(x,y)$ whose marginals are respectively $\mathbb P_r$ and $\mathbb P_g.$
+
+  1. Intuitively, γ(x, y) indicates how much “mass” must be transported from $x$ to $y$ in order to transform the distributions $\mathbb P_r$ into the distribution $\mathbb P_g$.
+  2. The EM distance then is the “cost” of the optimal transport plan.
+
+
+
+![img](./img/wd1.png)
+
+### Example: Learning parallel lines
+Let $Z \sim U[0,1]$. Let $\p_0$ be the distribution of $(0,Z) \in \mathbb R^2$, 
+%uniform on a straight vertical line passing through the origin. 
+Now let $g_\theta (z) = (\theta, z)$ with $\theta$ a single real parameter. In this case,
+
+- $W(\mathbb P_0, \p_\theta) = |\theta|$
+- $JS(\mathbb P_0, \p_\theta) = \begin{cases} \log 2 & \text{if} ~\theta \ne 0, \\ 0 & \text{if}~\theta = 0 \end{cases}$
+- $KL(\mathbb P_\theta || \mathbb P_0) = KL(\mathbb P_0 || \mathbb P_\theta) =  \begin{cases} +\infty & \text{if} ~\theta \ne 0, \\ 0 & \text{if}~\theta = 0 \end{cases}$
+- $\delta(\mathbb P_0, \mathbb P_\theta) = \begin{cases} 1 & \text{if} ~\theta \ne 0, \\ 0 & \text{if}~\theta = 0 \end{cases}$
+
+
 
