@@ -74,5 +74,7 @@ distribution $\mathbb p_\theta$ in a manner that makes the mapping $\theta \maps
   - we would like to have a loss function $\theta \mapsto \rho(\mathbb p_\theta, \mathbb p_r)$ that is continuous, and this is equivalent to having the mapping $\theta \mapsto \mathbb p_\theta$ be continuous.
 
     
-> Note that for $f: \{ \theta_\alpha \} \rightarrow \{\mathbb p_\beta \}$ , $~f(\theta) = \mathbb p_\theta$ , $f(\theta)$ is continuous if
- $$~^\forall \text{open } V \subset \{ \mathbb p_\beta \},~ f^{-1}(V) \text{ is also open in } \{\theta_\alpha \}$$
+> Note that for $f: \{ \theta_\alpha \} \rightarrow \{\mathbb p_\beta \}$ , $f(\theta) = \mathbb p_\theta$ , $f(\theta)$ is continuous if
+ $$\forall \text{open } V \subset \{ \mathbb p_\beta \}, f^{-1}(V) \text{ is also open in } \{\theta_\alpha \}$$
+For the topology on the metric space $M = (\{\mathbb p_\beta\}, \rho )$,  $g(\theta) = \rho(\mathbb p_\theta, \mathbb p_r)$ is continuous, if $f(\theta)$ is continuous. Since for $h(\mathbb p_\theta) = \rho(\mathbb p_\theta, \mathbb p_r), g(\theta) = h(f(\theta))$ and distance function $h$ is continuous. So,
+$$\forall W \in M, g^{-1}(V) = f^{-1} (h^{-1}(W)) \text{ is also open in } \{\theta_\alpha \}.$$
