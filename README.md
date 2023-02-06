@@ -27,7 +27,11 @@
 16. [Chen et al. (2020) - A simple framework for contrastive learning of visual representations](https://arxiv.org/abs/2002.05709)
 
 - 수학적, 통계적 독해능력이 논문을 이해하고 공부하며 인사이트를 얻는데 도움이 되었습니다.
+
+---
+
 - 이 중 제가 맡아 발표한 아래의 논문에 대한 리뷰를 정리합니다.
+
   - Arjovsky et al. (2017) - Wasserstein GAN
   - Gal and Ghahramani (2016) - Dropout as a bayesian approximation_representing model uncertainty in deep learning
   - Gal and Ghahramani (2016) - Bayesian convolutional neural networks with bernoulli approximate variaional inferenceㄴ
