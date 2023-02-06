@@ -129,3 +129,17 @@ Now let $g_\theta (z) = (\theta, z)$ with $\theta$ a single real parameter. In t
 - $KL(\mathbb P_\theta || \mathbb P_0) = KL(\mathbb P_0 || \mathbb P_\theta) =  +\infty  \text{ if } \theta \ne 0, \\ 0  \text{ if } \theta = 0 $
 - $\delta(\mathbb P_0, \mathbb P_\theta) = 1  \text{ if }  \theta \ne 0, \\ 0  \text{ if } \theta = 0$
 
+### Wasserstein distance is indeed a distance
+
+
+- Obviously symmetric.
+- Existence theorem for optimal coupling implies the identity of indiscernibles.
+- Gluing lemma can be applied to show the triangle inequality.
+
+
+
+Let $\mathbb{P}_r$ be a fixed distribution over a compact metric space $\mathcal{X}$ . Let $Z$ be a random variable over another space $\mathcal{Z}$. Let $g:\mathcal{Z}\times\mathbb{R}^d\rightarrow\mathcal{X}$ be a function, that will be denoted as $g_\theta(z)$. Let $\mathbb{P}_\theta$ denote the distribution of $g_\theta(Z)$. Then
+            1. If $g$ is continuous in $\theta$, so is $W(\mathbb{P}_r,\mathbb{P}_\theta)$.
+            2. If $g$ is locally Lipschitz with local Lipschitz constants $L(\theta,z)$ satisfying $\mathbb{E}[L(\theta,Z)]<+\infty$, then $W(\mathbb{P}_r,\mathbb{P}_\theta)$ is continuous everywhere, and differentiable almost everywhere.
+            3. Statements 1 and 2 are false for the Jensen-Shannon divergence and all the $KL$s.
+        \end{enumerate}
