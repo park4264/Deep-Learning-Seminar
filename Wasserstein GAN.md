@@ -10,7 +10,7 @@
 
 
 ## Topic
-![STDNNK](./img/topic.png)
+![img](./img/topic.png)
 
 
 
@@ -38,7 +38,7 @@ $$\min_G V(D^*, G) = 2JS(\mathbb p_r, \mathbb p_\theta) - 2\log2$$
 
 ### Discriminator vs Critic
 
-
+![img](./img/topic.png)
 
 
 
