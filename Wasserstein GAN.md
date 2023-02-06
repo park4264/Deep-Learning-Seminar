@@ -120,14 +120,12 @@ where $\prod (\mathbb P_r, \mathbb P_g)$ denotes the set of all joint distributi
 ![img](./img/wd1.png)
 
 ### Example: Learning parallel lines
-Let $Z \sim U[0,1]$. Let $\p_0$ be the distribution of $(0,Z) \in \mathbb R^2$, 
+Let $Z \sim U[0,1]$. Let $\mathbb P_0$ be the distribution of $(0,Z) \in \mathbb R^2$ , 
 %uniform on a straight vertical line passing through the origin. 
 Now let $g_\theta (z) = (\theta, z)$ with $\theta$ a single real parameter. In this case,
 
-- $W(\mathbb P_0, \p_\theta) = |\theta|$
-- $JS(\mathbb P_0, \p_\theta) = \begin{cases} \log 2 & \text{if} ~\theta \ne 0, \\ 0 & \text{if}~\theta = 0 \end{cases}$
-- $KL(\mathbb P_\theta || \mathbb P_0) = KL(\mathbb P_0 || \mathbb P_\theta) =  \begin{cases} +\infty & \text{if} ~\theta \ne 0, \\ 0 & \text{if}~\theta = 0 \end{cases}$
-- $\delta(\mathbb P_0, \mathbb P_\theta) = \begin{cases} 1 & \text{if} ~\theta \ne 0, \\ 0 & \text{if}~\theta = 0 \end{cases}$
-
-
+- $W(\mathbb P_0, \mathbb P_\theta) = |\theta|$
+- $JS(\mathbb P_0, \mathbb P_\theta) =  \log 2 \text{ if } \theta \ne 0, \\  0  \text{ if } \theta = 0 $
+- $KL(\mathbb P_\theta || \mathbb P_0) = KL(\mathbb P_0 || \mathbb P_\theta) =  +\infty  \text{ if } \theta \ne 0, \\ 0  \text{ if } \theta = 0 $
+- $\delta(\mathbb P_0, \mathbb P_\theta) = 1  \text{ if }  \theta \ne 0, \\ 0  \text{ if } \theta = 0$
 
