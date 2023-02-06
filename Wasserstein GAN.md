@@ -212,8 +212,51 @@ $\max_{w \in \mathcal W} \mathbb E_{x \sim \mathbb p_r}[f_w(x)] - \mathbb E_{z\s
 
 ### Algorithm
 
-![img](./img/vs.png)
+![img](./img/al.png)
 
 
+
+### RMSProp
+
+$$w \leftarrow w + \alpha \cdot \text{RMSProp}(w, g_w)$$
+
+$$\theta \leftarrow \theta - \alpha \cdot \text{RMSProp}(\theta, g_\theta)$$
+
+![img](./img/GD1.png)
+
+
+
+### Clipping Issue - Lipschitz constraint
+
+- Since the loss for the critic is nonstationary, momentum based methods(such as *Adam*) seemed to perform worse.
+- We therefore switched to *RMSProp* which is known to perform well even on very nonstationary problems.
+
+$$w \leftarrow \text{clip}(w,-c,c)$$
+
+- $|f(x_1) - f(x_2)| \le K |x_1 - x_2|$
+- Note that the fact: $$\mathcal W \text{ is compact} \Rightarrow ~\text{all } f_w \text{ will be K-Lipschitz for some K}$$
+- Simple we can do is clamp the weights to a fixed box, say $\mathcal W = [-0.01, 0.01]^l,$ after each gradient update.
+  - $\text{clamp}(x,a,b) = b \text{ if } x \ge b , a  \text{ if } x \le a  , x  \text{ o.w.}$
+- $\mathcal W \text{ is compact} \Rightarrow ~\text{all } f_w \text{ will be K-Lipschitz for some K}$
+- $w$ is weight of neural network, composition of activation functions and linear transformations.
+    $f_w(x) = \sigma(wx + \text{bias})$
+- Activation functions(sigmoid, Relu, tanh), $\sigma$, are 1-Lipschitz function.
+- So Lipschitz constant $K$ of neural network depends on value of $w$ (If it has n multiple layer, roughly saying, it depends on $w^n$)
+    $$|f_w(x)-f_w(y)|  = |\sigma(wx + b) - \sigma(wy + b)| \le 1 \cdot | wx - wy |$$
+- So if we constrain $w$ to lie in compact space $\mathcal W$, closed and bounded space, Lipschitz constant K would be decided.
+
+
+
+![img](./img/clipping.png)
+
+- The model performance is very sensitive to this hyperparameter.(batch normalization is off)
+- Instead of applying clipping, **WGAN-GP** penalizes the model if the gradient norm moves away from its target norm value 1.
+
+## GAN과 WGAN
+
+![img](./img/image2.png)
+
+## 
+         
 
 
