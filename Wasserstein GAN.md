@@ -68,6 +68,10 @@ distribution $\mathbb p_\theta$ in a manner that makes the mapping $\theta \maps
 
 - **Continuity:** when a sequence of parameters $\theta_t$ converges to $\theta,$ the distribution $\mathbb p_{\theta_t}$ also converge to $\mathbb p_\theta.$
 
+  - It depends on the way we compute the distance between distributions.
+
+- The main reason we care about the mapping $\theta \mapsto \mathbb p_\theta$ to be continuous: 
+  - we would like to have a loss function $\theta \mapsto \rho(\mathbb p_\theta, \mathbb p_r)$ that is continuous, and this is equivalent to having the mapping $\theta \mapsto \mathbb p_\theta$ be continuous.
 
     
 
