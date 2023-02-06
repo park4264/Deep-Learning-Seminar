@@ -38,8 +38,17 @@ $$\min_G V(D^*, G) = 2JS(\mathbb p_r, \mathbb p_\theta) - 2\log2$$
 
 ### Discriminator vs Critic
 
-![img](./img/topic.png)
+![img](./img/vs.png)
 
+
+
+
+
+
+
+
+- No longer have to worry about the fast learning of the discriminator.
+- The gradient is smoother everywhere and learns better even the generator is not producing good images.
 
 
 
