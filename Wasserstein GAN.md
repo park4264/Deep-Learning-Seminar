@@ -10,5 +10,7 @@
 
 
 ## Topic
+![STDNNK](./img/topic.png)
 
-![STDNNK](./img/clipping.png)
+
+
