@@ -18,7 +18,7 @@
 
 - Minimizing the GAN objective function with an optimal discriminator, $D^*$, is equivalent to minimizing the JS-divergence;
 
-$$\min_G V(D^*, G) = 2JS(\mathbb p_r, \mathbb p_\theta) - 2\log2$$
+$$\min_G V(D^*, G) = 2JS(\mathbb P_r, \mathbb P_\theta) - 2\log2$$
 
 - **Claim:** Divergence, which is not continuous with the generator's parameter, leads to difficulty in learning.
 
@@ -26,7 +26,7 @@ $$\min_G V(D^*, G) = 2JS(\mathbb p_r, \mathbb p_\theta) - 2\log2$$
 ### Training GANs is hard for theoretical reasons with the GAN cost functions.
 > *Arjovsky et al., (2017), Towards principled methods for training Generative Adversarial Networks.*
 
-- When $\mathbb p_r$ and $\mathbb p_\theta$ lie on low dimensional manifolds, there's always a perfect discriminator that can be trained well.
+- When $\mathbb P_r$ and $\mathbb P_\theta$ lie on low dimensional manifolds, there's always a perfect discriminator that can be trained well.
 - It provides no usable gradients. ( $\nabla D^*(x)$ will be 0 for almost everywhere.)
   - Gradient vanishing:
     $$\nabla_{\theta_g} \log \Big( 1 - D(G(z^{(i)})) \Big)  \rightarrow 0$$
@@ -52,29 +52,62 @@ $$\min_G V(D^*, G) = 2JS(\mathbb p_r, \mathbb p_\theta) - 2\log2$$
 
 ## Introduction
 
-- We focus on the ways to measure how close $\mathbb p_\theta$ is to $\mathbb p_r$ ; 
-$$\rho(\mathbb p_\theta, \mathbb p_r)$$
+- We focus on the ways to measure how close $\mathbb P_\theta$ is to $\mathbb P_r$ ; 
+$$\rho(\mathbb P_\theta, \mathbb P_r)$$
 - The most fundamental difference:
     Their impact on the convergence of sequence of probability distribution.
 - Note that: 
-    A sequence of distribution $(\mathbb p_t)_{t\in \mathbb N}$ **converges**
+    A sequence of distribution $(\mathbb P_t)_{t\in \mathbb N}$ **converges**
     
-    $\Leftrightarrow$ $^\exists \mathbb p_{\infty}$ s.t. $\rho(\mathbb p_t, \mathbb p_{\infty})$ tends to 0.
+    $\Leftrightarrow$ $^\exists \mathbb P_{\infty}$ s.t. $\rho(\mathbb P_t, \mathbb P_{\infty})$ tends to 0.
     
     - We want to find a weaker metric $\rho$.
 
 - In order to optimize the parameter $\theta$ , it is desirable to define our model
-distribution $\mathbb p_\theta$ in a manner that makes the mapping $\theta \mapsto \mathbb p_\theta$ continuous.
+distribution $\mathbb P_\theta$ in a manner that makes the mapping $\theta \mapsto \mathbb P_\theta$ continuous.
 
-- **Continuity:** when a sequence of parameters $\theta_t$ converges to $\theta,$ the distribution $\mathbb p_{\theta_t}$ also converge to $\mathbb p_\theta.$
+- **Continuity:** when a sequence of parameters $\theta_t$ converges to $\theta,$ the distribution $\mathbb P_{\theta_t}$ also converge to $\mathbb P_\theta.$
 
   - It depends on the way we compute the distance between distributions.
 
-- The main reason we care about the mapping $\theta \mapsto \mathbb p_\theta$ to be continuous: 
-  - we would like to have a loss function $\theta \mapsto \rho(\mathbb p_\theta, \mathbb p_r)$ that is continuous, and this is equivalent to having the mapping $\theta \mapsto \mathbb p_\theta$ be continuous.
+- The main reason we care about the mapping $\theta \mapsto \mathbb P_\theta$ to be continuous: 
+  - we would like to have a loss function $\theta \mapsto \rho(\mathbb p_\theta, \mathbb P_r)$ that is continuous, and this is equivalent to having the mapping $\theta \mapsto \mathbb p_\theta$ be continuous.
 
     
-> Note that for $f: \{ \theta_\alpha \} \rightarrow \{\mathbb p_\beta \}$ , $f(\theta) = \mathbb p_\theta$ , $f(\theta)$ is continuous if
- $$\forall \text{open } V \subset \{ \mathbb p_\beta \}, f^{-1}(V) \text{ is also open in } \{\theta_\alpha \}$$
-For the topology on the metric space $M = (\{\mathbb p_\beta\}, \rho )$,  $g(\theta) = \rho(\mathbb p_\theta, \mathbb p_r)$ is continuous, if $f(\theta)$ is continuous. Since for $h(\mathbb p_\theta) = \rho(\mathbb p_\theta, \mathbb p_r), g(\theta) = h(f(\theta))$ and distance function $h$ is continuous. So,
+> Note that for $f: \{ \theta_\alpha \} \rightarrow \{\mathbb P_\beta \}$ , $f(\theta) = \mathbb P_\theta$ , $f(\theta)$ is continuous if
+ $$\forall \text{open } V \subset \{ \mathbb P_\beta \}, f^{-1}(V) \text{ is also open in } \{\theta_\alpha \}$$
+For the topology on the metric space $M = (\{\mathbb P_\beta\}, \rho )$,  $g(\theta) = \rho(\mathbb P_\theta, \mathbb P_r)$ is continuous, if $f(\theta)$ is continuous. Since for $h(\mathbb P_\theta) = \rho(\mathbb P_\theta, \mathbb P_r), g(\theta) = h(f(\theta))$ and distance function $h$ is continuous. So,
 $$\forall W \in M, g^{-1}(V) = f^{-1} (h^{-1}(W)) \text{ is also open in } \{\theta_\alpha \}.$$
+
+
+### 논문의 기여
+
+- GAN의 Discriminator보다 선생님 역할을 잘 할 수 있는 Critic을 사용함으로써 Gradient를 잘 전달시키고 Critic과 Generator를 최적점까지 학습할 수 있다. 
+- 따라서 아래와 같은 이점을 얻을 수 있다.
+  - During training, you do not have to care about the balance between the discriminator and generator.
+  - Mode dropping, a common problem in GAN, can be solved.
+
+
+## Different Distances
+
+### Notation
+
+- $\mathcal X:$ a compact metric set. (such as the space of images $[0, 1]^d$ )
+- $\Sigma:$ the set of all Borel subsets of $\mathcal X.$
+- $\text{Prob}(\mathcal X):$ the space of probability measures definded on $\mathcal X.$
+
+We now define elementary distances and divergences between two distributions $\mathbb P_r, \mathbb P_g \in \text{Prob}(\mathcal X).$
+
+- **The Total Variation (TV) distance:**
+    $$\delta(\mathbb P_r, \mathbb P_g) = \sup_{A \in \Sigma} |\mathbb P_r(A) - \mathbb P_g(A) |$$
+    
+
+- **The Kullback-Leibler (KL) divergence:**
+$$KL(\mathbb P_r || \mathbb P_g) = \int \log \left( \dfrac{P_r(x)}{P_g(x)} \right) P_r(x) d\mu(x),$$ where both $\mathbb P_r, \mathbb P_g$ are assumed to be absolutely continuous.
+
+- **The Jensen-Shannon (JS) divergence:**
+$JS(\mathbb P_r, \mathbb P_g) = KL(\mathbb P_r || \mathbb P_m) + KL(\mathbb P_g || \mathbb P_m),$$ where $\mathbb P_m$ is the mixture $(\mathbb P_r + \mathbb P_g)/2$
+
+- **The Earth-Mover (EM) distance or Wasserstein-1:**
+$$W(\mathbb P_r , \mathbb P_g) = \inf_{\gamma \in \prod (\mathbb P_r, \p_g)} \E_{(x,y) \sim \gamma}\Big[ || x - y || \Big],$$
+
