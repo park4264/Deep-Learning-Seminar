@@ -11,22 +11,21 @@
 
 1. [Kingma and Welling (2013) - Variational Autoencoder](https://arxiv.org/abs/1312.6114) (실습 포함)
 2. [Goodfellow et al. (2014) - Generative Adversarial Nets](https://arxiv.org/abs/1406.2661) (실습 포함)
-3. [Vaswani et al. (2017) - Attention is all you need](https://arxiv.org/abs/1706.03762) 
-4. [Gal and Ghahramani (2016) - Dropout as a bayesian approximation_representing model uncertainty in deep learning](https://arxiv.org/abs/1506.02142)
-5. [Gal and Ghahramani (2016) - Bayesian convolutional neural networks with bernoulli approximate variaional inference](https://arxiv.org/abs/1506.02158)
-6. [Wu et al. (2020) - A comprehensive survey on graph neural networks](https://arxiv.org/abs/1901.00596) 
-7. [Kipf and Welling (2017) - Semi-supervised classification with graph convolutional networks](https://arxiv.org/abs/1609.02907) (실습 포함)
-8. [Bellemare et al. (2017) - A distributional perspective on reinforcement learning](https://arxiv.org/abs/1707.06887) 
-9. [Levine (2018) - Reinforcement learning and control as probabilistic inference_tutorial and review](https://arxiv.org/abs/1805.00909) (실습 포함)
-
-<!-- 3. [Arjovsky et al. (2017) - Wasserstein GAN](https://arxiv.org/abs/1701.07875) (x) -->
-<!-- 4. [Chen et al. (2018) - Neural ordinary differential equations](https://arxiv.org/abs/1806.07366) (x) -->
-<!-- 5. [Song et al. (2021) - Score-based generative modeling through stochastic differential equations](https://openreview.net/forum?id=PxTIG12RRHS) (x) -->
-<!-- 13. [Finn et al. (2017) - Model-agnostic meta learning for fast adaptation of deep networks](https://arxiv.org/abs/1703.03400) (x) -->
-<!-- 14. [Finn et al. (2018) - Probabilistic model-agnostic meta-learning](https://arxiv.org/abs/1806.02817) (x) -->
-<!-- 15. [He et al. (2020) - Momentum contrast for unsupervised visual representation learning](https://arxiv.org/abs/1911.05722) (x) -->
-<!-- 16. [Chen et al. (2020) - A simple framework for contrastive learning of visual representations](https://arxiv.org/abs/2002.05709) (x) -->
+3. [Arjovsky et al. (2017) - Wasserstein GAN](https://arxiv.org/abs/1701.07875)
+4. [Chen et al. (2018) - Neural ordinary differential equations](https://arxiv.org/abs/1806.07366)
+5. [Song et al. (2021) - Score-based generative modeling through stochastic differential equations](https://openreview.net/forum?id=PxTIG12RRHS)
+6. [Vaswani et al. (2017) - Attention is all you need](https://arxiv.org/abs/1706.03762) 
+7. [Gal and Ghahramani (2016) - Dropout as a bayesian approximation_representing model uncertainty in deep learning](https://arxiv.org/abs/1506.02142)
+8. [Gal and Ghahramani (2016) - Bayesian convolutional neural networks with bernoulli approximate variaional inference](https://arxiv.org/abs/1506.02158)
+9. [Wu et al. (2020) - A comprehensive survey on graph neural networks](https://arxiv.org/abs/1901.00596) 
+10. [Kipf and Welling (2017) - Semi-supervised classification with graph convolutional networks](https://arxiv.org/abs/1609.02907) (실습 포함)
+11. [Bellemare et al. (2017) - A distributional perspective on reinforcement learning](https://arxiv.org/abs/1707.06887) 
+12. [Levine (2018) - Reinforcement learning and control as probabilistic inference_tutorial and review](https://arxiv.org/abs/1805.00909) (실습 포함)
+13. [Finn et al. (2017) - Model-agnostic meta learning for fast adaptation of deep networks](https://arxiv.org/abs/1703.03400)
+14. [Finn et al. (2018) - Probabilistic model-agnostic meta-learning](https://arxiv.org/abs/1806.02817)
+15. [He et al. (2020) - Momentum contrast for unsupervised visual representation learning](https://arxiv.org/abs/1911.05722)
+16. [Chen et al. (2020) - A simple framework for contrastive learning of visual representations](https://arxiv.org/abs/2002.05709)
 
 - 수학적, 통계적 독해능력이 논문을 이해하고 공부하며 인사이트를 얻는데 도움이 되었습니다.
-- 수학적 리뷰 및 논문 구현과 응용 (토이프로젝트).
+
 
