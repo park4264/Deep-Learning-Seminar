@@ -50,6 +50,15 @@ $$\min_G V(D^*, G) = 2JS(\mathbb p_r, \mathbb p_\theta) - 2\log2$$
 - No longer have to worry about the fast learning of the discriminator.
 - The gradient is smoother everywhere and learns better even the generator is not producing good images.
 
+## Introduction
 
-
+- We focus on the ways to measure how close $\mathbb p_\theta$ is to $\mathbb p_r$ ; 
+$$\rho(\mathbb p_\theta, \mathbb p_r)$$
+- The most fundamental difference:
+    Their impact on the convergence of sequence of probability distribution.
+- Note that: 
+    A sequence of distribution $(\p_t)_{t\in \mathbb N}$ **converges**
+    
+    $\Leftrightarrow$ $^\exists \p_{\infty}$ s.t. $\rho(\p_t, \p_{\infty})$ tends to 0.
+    
 
