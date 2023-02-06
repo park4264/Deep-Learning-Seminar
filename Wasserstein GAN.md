@@ -24,10 +24,20 @@ $$\min_G V(D^*, G) = 2JS(\mathbb p_r, \mathbb p_\theta) - 2\log2$$
 
 
 ### Training GANs is hard for theoretical reasons with the GAN cost functions.
-> *Arjovsky et al., (2017), Towards principled methods for training Generative Adversarial Networks.
+> *Arjovsky et al., (2017), Towards principled methods for training Generative Adversarial Networks.*
 
 - When $\mathbb p_r$ and $\mathbb p_\theta$ lie on low dimensional manifolds, there's always a perfect discriminator that can be trained well.
-- 
+- It provides no usable gradients. ( $\nabla D^*(x)$ will be 0 for almost everywhere.)
+  - Gradient vanishing:
+    $$\nabla_{\theta_g} \log \Big( 1 - D(G(z^{(i)})) \Big)  \rightarrow 0$$
+    under optimal discriminator. ( $D$ is close to $D^*$)
+  - Mode collapse:
+    $$-\nabla_{\theta_g}\log D(G(z^{(i)}))$$ 
+    $$\textit{unstable with large variance of gradients.}$$
+
+
+### Discriminator vs Critic
+
 
 
 
