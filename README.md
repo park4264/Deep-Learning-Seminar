@@ -25,7 +25,7 @@
 15. [He et al. (2020) - Momentum contrast for unsupervised visual representation learning](https://arxiv.org/abs/1911.05722)
 16. [Chen et al. (2020) - A simple framework for contrastive learning of visual representations](https://arxiv.org/abs/2002.05709)
 
-- 수학적, 통계적 독해능력이 논문을 이해하고 공부하며 인사이트를 얻는데 도움이 되었습니다.
+
 
 ---
 
