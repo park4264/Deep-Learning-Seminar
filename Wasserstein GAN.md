@@ -205,7 +205,15 @@ $W(\mathbb p_r, \mathbb p_\theta) = \sup_{\Vert f\Vert_L \le 1}\{ \mathbb E_{x \
 - If we have a parameterized family of functions $(f_w){w \in \mathcal W}$ that are all $K$ -Lipschitz for some $K$ , we could consider solving the problem
 $\max_{w \in \mathcal W} \mathbb E_{x \sim \mathbb p_r}[f_w(x)] - \mathbb E_{z\sim p(z)}[f_w(g_\theta(z))]$
 
-  - This process would yield a calculation of $W(\p_r, \p_\theta)$.
+  - This process would yield a calculation of $W(\mathbb p_r, \mathbb p_\theta)$.
   - We could consider differentiating $W(\mathbb p_r, \mathbb p_\theta)$ by back-prop through (2) via estimating $\mathbb E_{z\sim p(z)}[\nabla_\theta f_w(g_\theta (z))]$
-  - $f_w$: $K$-Lipschitz $\dashrightarrow $ 'Weight Clipping'
+  - $f_w$: $K$-Lipschitz $\dashrightarrow$ 'Weight Clipping'
+
+
+### Algorithm
+
+![img](./img/vs.png)
+
+
+
 
