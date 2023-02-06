@@ -74,5 +74,5 @@ distribution $\mathbb p_\theta$ in a manner that makes the mapping $\theta \maps
   - we would like to have a loss function $\theta \mapsto \rho(\mathbb p_\theta, \mathbb p_r)$ that is continuous, and this is equivalent to having the mapping $\theta \mapsto \mathbb p_\theta$ be continuous.
 
     
-> Note that for $f: \{ \theta_\alpha \} \rightarrow \{\mathbb p_\beta \}$,$~f(\theta) = \mathbb p_\theta$, $f(\theta)$ is continuous if
-$$~^\forall \text{open } V \subset \{ \mathbb p_\beta \},~ f^{-1}(V) \text{ is also open in } \{\theta_\alpha \}$$
+> Note that for $f: \{ \theta_\alpha \} \rightarrow \{\mathbb p_\beta \}$ , $~f(\theta) = \mathbb p_\theta$ , $f(\theta)$ is continuous if
+ $$~^\forall \text{open } V \subset \{ \mathbb p_\beta \},~ f^{-1}(V) \text{ is also open in } \{\theta_\alpha \}$$
