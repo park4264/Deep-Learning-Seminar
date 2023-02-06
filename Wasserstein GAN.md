@@ -57,8 +57,17 @@ $$\rho(\mathbb p_\theta, \mathbb p_r)$$
 - The most fundamental difference:
     Their impact on the convergence of sequence of probability distribution.
 - Note that: 
-    A sequence of distribution $(\p_t)_{t\in \mathbb N}$ **converges**
+    A sequence of distribution $(\mathbb p_t)_{t\in \mathbb N}$ **converges**
     
-    $\Leftrightarrow$ $^\exists \p_{\infty}$ s.t. $\rho(\p_t, \p_{\infty})$ tends to 0.
+    $\Leftrightarrow$ $^\exists \mathbb p_{\infty}$ s.t. $\rho(\mathbb p_t, \mathbb p_{\infty})$ tends to 0.
+    
+    - We want to find a weaker metric $\rho$.
+
+- In order to optimize the parameter $\theta$ , it is desirable to define our model
+distribution $\mathbb p_\theta$ in a manner that makes the mapping $\theta \mapsto \mathbb p_\theta$ continuous.
+
+- **Continuity:** when a sequence of parameters $\theta_t$ converges to $\theta,$ the distribution $\mathbb p_{\theta_t}$ also converge to $\mathbb p_\theta.$
+
+
     
 
