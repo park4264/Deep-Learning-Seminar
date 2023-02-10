@@ -31,6 +31,6 @@
 
 - 이 중 제가 맡아 발표한 아래의 논문에 대한 리뷰를 정리합니다.
 
-  - Arjovsky et al. (2017) - Wasserstein GAN
-  - Gal and Ghahramani (2016) - Dropout as a bayesian approximation_representing model uncertainty in deep learning
-  - Gal and Ghahramani (2016) - Bayesian convolutional neural networks with bernoulli approximate variaional inference
+  - Arjovsky et al. (2017). Wasserstein GAN
+  - Gal and Ghahramani (2016). Dropout as a bayesian approximation_representing model uncertainty in deep learning
+  - Gal and Ghahramani (2016). Bayesian convolutional neural networks with bernoulli approximate variaional inference
