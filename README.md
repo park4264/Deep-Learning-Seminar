@@ -10,7 +10,7 @@
 
 1. Kingma and Welling (2013) - Variational Autoencoder [[pdf]](https://arxiv.org/abs/1312.6114)
 2. Goodfellow et al. (2014) - Generative Adversarial Nets [[pdf]](https://arxiv.org/abs/1406.2661)
-3. Arjovsky et al. (2017) - Wasserstein GAN [[pdf]](https://arxiv.org/abs/1701.07875)
+3. Arjovsky et al. (2017) - Wasserstein GAN [[pdf]](https://arxiv.org/abs/1701.07875) [[Review]](https://github.com/park4264/Deep-Learning-Seminar/blob/main/1.%20Wasserstein%20GAN.md) [[Beamer]]()
 4. Chen et al. (2018) - Neural ordinary differential equations [[pdf]](https://arxiv.org/abs/1806.07366)
 5. Song et al. (2021) - Score-based generative modeling through stochastic differential equations [[pdf]](https://openreview.net/forum?id=PxTIG12RRHS)
 6. Vaswani et al. (2017) - Attention is all you need [[pdf]](https://arxiv.org/abs/1706.03762) 
