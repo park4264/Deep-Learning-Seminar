@@ -15,7 +15,7 @@
 5. Song et al. (2021) - Score-based generative modeling through stochastic differential equations [[pdf]](https://openreview.net/forum?id=PxTIG12RRHS)
 6. Vaswani et al. (2017) - Attention is all you need [[pdf]](https://arxiv.org/abs/1706.03762) 
 7. Gal and Ghahramani (2016) - Dropout as a bayesian approximation_representing model uncertainty in deep learning [[pdf]](https://arxiv.org/abs/1506.02142) [[Review]](https://github.com/park4264/Deep-Learning-Seminar/blob/main/2.%20Dropout%20as%20a%20bayesian%20approximation_representing%20model%20uncertainty%20in%20deep%20learning.md) [[Beamer]](https://github.com/park4264/Deep-Learning-Seminar/blob/main/Beamer/MC%20Dropout_Beamer.pdf)
-8. Gal and Ghahramani (2016) - Bayesian convolutional neural networks with bernoulli approximate variaional inference [[pdf]](https://arxiv.org/abs/1506.02158) [[Review]]() [[Beamer]]([https://github.com/park4264/Deep-Learning-Seminar/blob/main/Beamer/MC%20Dropout_Beamer.pdf](https://github.com/park4264/Deep-Learning-Seminar/blob/main/Beamer/Bayesian%20CNNs_Beamer.pdf))
+8. Gal and Ghahramani (2016) - Bayesian convolutional neural networks with bernoulli approximate variaional inference [[pdf]](https://arxiv.org/abs/1506.02158) [[Review]]() [[Beamer]](https://github.com/park4264/Deep-Learning-Seminar/blob/main/Beamer/Bayesian%20CNNs_Beamer.pdf)
 9. Wu et al. (2020) - A comprehensive survey on graph neural networks [[pdf]](https://arxiv.org/abs/1901.00596) 
 10. Kipf and Welling (2017) - Semi-supervised classification with graph convolutional networks [[pdf]](https://arxiv.org/abs/1609.02907)
 11. Bellemare et al. (2017) - A distributional perspective on reinforcement learning [[pdf]](https://arxiv.org/abs/1707.06887) 
