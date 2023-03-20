@@ -34,3 +34,6 @@
   - Arjovsky et al. (2017). Wasserstein GAN [[Review]](https://github.com/park4264/Deep-Learning-Seminar/blob/main/1.%20Wasserstein%20GAN.md) [[Beamer]](https://github.com/park4264/Deep-Learning-Seminar/blob/main/Beamer/WGAN_Beamer.pdf)
   - Gal and Ghahramani (2016). Dropout as a bayesian approximation_representing model uncertainty in deep learning [[Review]](https://github.com/park4264/Deep-Learning-Seminar/blob/main/2.%20Dropout%20as%20a%20bayesian%20approximation_representing%20model%20uncertainty%20in%20deep%20learning.md) [[Beamer]](https://github.com/park4264/Deep-Learning-Seminar/blob/main/Beamer/MC%20Dropout_Beamer.pdf)
   - Gal and Ghahramani (2016). Bayesian convolutional neural networks with bernoulli approximate variaional inference [[Review]](https://github.com/park4264/Deep-Learning-Seminar/blob/main/3.%20Bayesian%20Convolutional%20Neural%20Networks%20with%20Bernoulli%20Approximate%20Variational%20Inference.md) [[Beamer]](https://github.com/park4264/Deep-Learning-Seminar/blob/main/Beamer/Bayesian%20CNNs_Beamer.pdf)
+
+---
+- 이미지생성모델
